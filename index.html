@@ -1,7 +1,122 @@
-<!DOCTYPE html>
-<html>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.min.css" media="screen" />
+  <link href='https://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <!-- <script type="text/javascript" src="raindrops.js"></script> -->
+  <script src="imagelightbox.js"></script>
+  <script type="text/javascript" src="imagelightbox.min.js"></script>
+  <script src="script.js"></script>
+  <script>
+      $( function()
+      {
+          $('.lightbox1').imageLightbox();
+          $('.lightbox2').imageLightbox();
+          $('.lightbox3').imageLightbox();
+          $('.lightbox4').imageLightbox();
+      });
+  </script>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+  <main>
+    <div class="fixed-bg bg1" id="name">
+      <div class="section">
+        <p class="title animated fadeInUp delay-three">Gaby Antova</p>
+        <p class="subtitle animated fadeInUp delay-two">Software Engineering Student | Web Developer  | Rock-Paper-Scissors Champion </p>
+        <p class="animated fadeInUp delay-two">
+          <a target="_blank" href="https://www.facebook.com/gabriela.antova.1"><i class="fa fa-facebook-square fa-2x"></i></a>
+          <a target="_blank" href="https://www.instagram.com/meropar/"><i class="fa fa-instagram fa-2x"></i></a>
+          <a target="_blank" href="http://meropa.deviantart.com"><i class="fa fa-deviantart fa-2x"></i></a>
+        </p>
+      </div>
+    </div>
+
+    <div class="scrolling-bg" id="container">
+      <div class="inner-content">
+        <div id="titleName" class="item">
+          <h1>Gabriela V. Antova</h1>
+          <p>Born in the beautiful city of Sofia, Bulgaria, graduated from the Italian Lyceum (Liceo Italiano) with excellent Bulgarian and Italian diplomas after spending a year abroad on an exchange program at Seymour, WI, USA.</p>
+          <p>Currently working towards my degree in <i>Software Engineering with Management</i>
+             at the University of Edinburgh and constantly looking for more ways to improve
+             myself.</p>
+        </div>
+        <div id="skills" class="item">
+          <h1>Skills</h1>
+          <p>Java, Python, SQL, Git</p>
+          <p>HTML5, CSS(SASS, SCSS), Javascript(Jquery), PHP, XML</p>
+          <p>Adobe Photoshop, Adobe Illustrator, Adobe Premiere Elements</p>
+          <p>Jira</p>
+        </div>
+        <!-- <div class="item">
+        </div> -->
+      </div>
+    </div>
+
+    <div class="fixed-bg bg2">
+      <div class="section">
+        <p class="title">Web Development</p>
+      </div>
+    </div>
+
+    <div class="scrolling-bg">
+      <div class="inner-content">
+        <p>I aim my work to speak for itself.</p>
+        <p>I love giving great attention to detail in everything I do. All my designs are clean, intuitive and fully responsive.</p>
+      </div>
+    </div>
+
+    <div class="fixed-bg bg3">
+      <div class="section">
+        <p class="title">Interests</p>
+      </div>
+    </div>
+
+    <div class="scrolling-bg">
+      <div class="inner-content">
+        <p>What do I enjoy doing in my free time?</p>
+        <h1>Photography</h1>
+
+        <div class='gallery'>
+          <a href="img/photography/img1.jpg" class="lightbox1"><img src="img/photography/thumb1.jpg"></a>
+          <a href="img/photography/img2.jpg" class="lightbox1"><img src="img/photography/thumb2.jpg"></a>
+          <a href="img/photography/img3.jpg" class="lightbox1"><img src="img/photography/thumb3.jpg"></a>
+        </div>
+
+        <h1>Photo manipulation</h1>
+        <div class='gallery'>
+          <a href="img/photomanips/img1.jpg" class="lightbox2"><img src="img/photomanips/thumb1.jpg"></a>
+          <a href="img/photomanips/img2.jpg" class="lightbox2"><img src="img/photomanips/thumb2.jpg"></a>
+          <a href="img/photomanips/img3.jpg" class="lightbox2"><img src="img/photomanips/thumb3.jpg"></a>
+        </div>
+
+        <h1>Digital drawing</h1>
+        <div class='gallery'>
+          <a href="img/digitaldrawings/img1.jpg" class="lightbox3"><img src="img/digitaldrawings/thumb1.jpg"></a>
+          <a href="img/digitaldrawings/img2.jpg" class="lightbox3"><img src="img/digitaldrawings/thumb2.jpg"></a>
+          <a href="img/digitaldrawings/img3.jpg" class="lightbox3"><img src="img/digitaldrawings/thumb3.jpg"></a>
+        </div>
+
+        <h1>And even some traditional drawing</h1>
+        <div class='gallery'>
+          <a href="img/traditionaldrawings/img1.jpg" class="lightbox4"><img src="img/traditionaldrawings/thumb1.jpg"></a>
+          <a href="img/traditionaldrawings/img2.jpg" class="lightbox4"><img src="img/traditionaldrawings/thumb2.jpg"></a>
+          <a href="img/traditionaldrawings/img3.jpg" class="lightbox4"><img src="img/traditionaldrawings/thumb3.jpg"></a>
+        </div>
+        <p>Still learming, but slowly and gradually progressing...</p>
+      </div>
+    </div>
+
+    <div class="fixed-bg bg4">
+      <div class="section">
+        <p class="title">Contact Me</p>
+      </div>
+    </div>
+
+    <div class="scrolling-bg">
+      <div class="inner-content">
+
+      </div>
+    </div>
+
+</main>
 </body>
-</html>

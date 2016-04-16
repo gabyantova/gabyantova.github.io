@@ -1,0 +1,139 @@
+@import "animated.scss";
+
+body, html, main{
+  /*background-image: url("img/bg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;*/
+  height: 100%;
+  margin: auto;
+  -webkit-backdrop-filter: blur(5px);
+}
+
+#name{
+  min-height: 100%;
+  .section{
+    padding-top: 10%;;
+    i{
+      padding: 5px;
+    }
+    a:link, a:visited, a:active{
+      color: white;
+    }
+    a:hover{
+      color: #f44336;
+    }
+  }
+}
+
+.section {
+  text-shadow: 0px 0px 4px #000000;
+  color: white;
+  text-align: center;
+  font-family: 'Bitter', serif;
+  .subtitle{
+    margin-top: -80px;
+    font-size:20px;
+  }
+  .title{
+    padding-top: 150px;
+    font-size:90px;
+  }
+
+}
+
+.fixed-bg{
+  min-height: 400px;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.scrolling-bg {
+	min-height: 500px;
+  background: #F4F4F4;
+  font-family: 'Bitter', serif;
+  position: relative;
+  .inner-content{
+    padding-top: 20px;
+    border-left: 2px solid #73AD21;
+    position: inherit;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-left: 4px;
+    width: 50%;
+    margin: auto;
+
+    .gallery{
+      img{
+        width: 300px;
+        height: auto;
+      }
+    }
+    .item{
+      clear: both;
+      position: relative;
+      float: left;
+      &::before{
+        content: "";
+        position: absolute;
+        width: 45px;
+        height: 45px;
+        left: -65px;
+        top: 18px;
+        background-image: url(img/icons.png);
+      }
+      &#titleName::before{
+        background-position: -90px bottom;
+      }
+      &#experience::before{
+        background-position: -45px top;
+      }
+      &#skills::before{
+        background-position: left top;
+      }
+      &#education::before{
+        background-position: right top;
+      }
+      &#honors::before{
+        background-position: left -45px;
+      }
+      &#asseenon::before{
+        background-position: -90px top;
+      }
+    }
+
+
+  }
+}
+
+
+  .bg1{
+    background-image: url("img/arthursseat6-ico.jpg");
+  }
+  .bg2{
+    background-image: url("img/img2.jpg");
+  }
+  .bg3{
+    background-image: url("img/img3.jpg");
+  }
+  .bg4{
+    background-image: url("img/img4.jpg");
+  }
+
+
+  #imagelightbox
+  {
+      position: fixed;
+      z-index: 9999;
+
+      -ms-touch-action: none;
+      touch-action: none;
+
+      -webkit-box-shadow: 0 0 3.125em rgba( 0, 0, 0, .75 );
+      box-shadow: 0 0 3.125em rgba( 0, 0, 0, .75 );
+
+  }
