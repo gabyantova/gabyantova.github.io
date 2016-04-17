@@ -26,13 +26,13 @@ $(document).ready(function(){
         if ($('#skills').isOnScreen()) {
             $("#skills").addClass("animated fadeInUp delay-three") ;
         }
-
-
-        ​$("#submit-btn").click(function() {
-            return false;
-        });
-
-        $("#submit-btn").preventDefault();
+        //
+        //
+        // ​$("#submit-btn").click(function() {
+        //     return false;
+        // });
+        //
+        // $("#submit-btn").preventDefault();
     //     if ($('.lightbox1').isOnScreen()) {
     //         $(".lightbox1").addClass("animated fadeInUp delay-three") ;
     //     }
