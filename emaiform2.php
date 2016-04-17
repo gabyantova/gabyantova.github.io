@@ -1,9 +1,16 @@
 <?php
 
+$doc = new DomDocument;
+
+// We need to validate our document before refering to the id
+$doc->validateOnParse = true;
+$doc->loadHtml(file_get_contents('http://gabyantova.me/index.html'));
+
+
 if(isset($_POST['email'])) {
 
 
- 
+
     // EDIT THE 2 LINES BELOW AS REQUIRED
 
     $email_to = "gaby.antova@gmail.com";
@@ -34,15 +41,15 @@ if(isset($_POST['email'])) {
 
     // validation expected data exists
 
-    if(!isset($_POST['first_name']) ||
+    if(!isset($_POST[$doc->getElementById('first_name')]) ||
 
-        !isset($_POST['last_name']) ||
+        !isset($_POST[$doc->getElementById('last_name')]) ||
 
-        !isset($_POST['email']) ||
+        !isset($_POST[$doc->getElementById('email')]) ||
 
-        !isset($_POST['telephone']) ||
+        !isset($_POST[$doc->getElementById('telephone')]) ||
 
-        !isset($_POST['comments'])) {
+        !isset($_POST[$doc->getElementById('comments')])) {
 
         died('We are sorry, but there appears to be a problem with the form you submitted.');
 
@@ -50,15 +57,15 @@ if(isset($_POST['email'])) {
 
 
 
-    $first_name = $_POST['first_name']; // required
+    $first_name = $_POST[$doc->getElementById('first_name')]; // required
 
-    $last_name = $_POST['last_name']; // required
+    $last_name = $_POST[$doc->getElementById('last_name')]; // required
 
-    $email_from = $_POST['email']; // required
+    $email_from = $_POST[$doc->getElementById('email')]; // required
 
-    $telephone = $_POST['telephone']; // not required
+    $telephone = $_POST[$doc->getElementById('telephone')]; // not required
 
-    $comments = $_POST['comments']; // required
+    $comments = $_POST[$doc->getElementById('comments')]; // required
 
 
 
