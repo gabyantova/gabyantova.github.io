@@ -31,6 +31,8 @@ $(document).ready(function(){
         ​$("#submit-btn").click(function() {
             return false;
         });
+
+        $("#submit-btn").preventDefault();
     //     if ($('.lightbox1').isOnScreen()) {
     //         $(".lightbox1").addClass("animated fadeInUp delay-three") ;
     //     }
